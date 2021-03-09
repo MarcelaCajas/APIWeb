@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tarea APIWeb</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/enlaces-e-imagenes/images/favicon.png"/>
+   
+</head>
+
+<!--Esto es lo que se ve de nuestra pagina el body-->
+<body>
+
+    <h1>Elementos HTML (en bloque y en línea)</h1>
+    <p>Un elemento en bloque ocupa todo el espacio de su elemento padre (contenedor), creando así un "bloque". </p>
+
+    <p>Elemento en línea</p>
+    <ul>
+        <li> p:  Este párrafo es un elemento en bloque; este fondo se ha coloreado para mostrar elemento principal (o padre) del párrafo </li>
+    </ul>
+
+    <p>Elementos en bloque</p>
+    <ul>
+        <li> address: informacion de contacto</li>
+        <li> article: contenido del articulo</li>
+        <li> aside: contenido adicional</li>
+        <li>audio: reproductor de audio</li>
+        <li>canvas: dibujo canvas</li>
+        <li>div: division de documento </li> 
+    </ul>
+
+    <!-- Corta una idea con una linea <hr/> -->
+    <hr/>
+
+    <h2>Ejemplos de caracteres reservados de HTML.</h2>
+    <p>Forman parte de un conjunto de caracteres, una codificación, que va más allá de los caracteres disponibles que se pueden grabar con un teclado normal. Incluyen letras griegas, símbolos matemáticos, flechas, monedas, dingbats (adornos) y gráficos, así como marcas de verificación y símbolos de derechos de autor y marcas registradas. Los caracteres especiales HTML también se conocen como caracteres enmascarados y entidades HTML. </p>
+    <ul>
+        <li> ©: El símbolo de copyright se puede generar con los siguientes caracteres (sin espacios) </li>
+        <ul>
+            <li>& # x a 9 </li>
+            <li> & # 1 6 9 </li>
+            <li>& c o p y </li>          
+        </ul>
+
+        <li> ®: Una marca registrada puede ser anotada de esta manera (sin espacios):</li>
+        <ul>
+            <li>& # x a d </li>
+            <li> & # 1 7 4 </li>
+            <li>& r e g </li>          
+        </ul>
+        
+        <li> → La flecha a la derecha (sin espacios):</li>
+        <ul>
+            <li>& # x 2 1 9 2 </li>
+            <li>& # 8 5 9 4 </li>
+            <li>& r a r r </li>          
+        </ul>
+
+    </ul>
+    <hr/>
+    <h3>Imágenes</h3>
+    <p>Tamaño real de la imagen</p>  
+    <img src="enlaces-e-imagenes/images/image1.jpg"
+      alt="Antena"
+      sizes="600px">  
+
+    <p>Tamaño 200*280 px de la imagen</p>  
+    <img src="enlaces-e-imagenes/images/image1.jpg"
+      alt="Antena"
+      height="200"
+      width="280">
+
+    <p>Tamaño 100*240 px de la imagen</p>  
+    <img src="enlaces-e-imagenes/images/image1.jpg"
+      alt="Antena"
+      height="100"
+      width="140"
+      > 
+
+    <p>Implementación del elemento html5 embed.A continuación se debe tener en cuenta que flash en mi computador no esta instalado por lo cual al implementar este elemento no se podia observar </p>
+    <embed src="/images.html" type="file/html" autostart="false">
+    <embed src="/enlaces-e-imagenes/images/image2.png" type="image/png" autostart="false">
+    <embed src="/enlaces-e-imagenes/images/image3.gif" type="video/gif" autostart="false">
+       
+    <p>Implementación del elemento html5 video </p>
+    <video src="/enlaces-e-imagenes/images/videos/video1.mp4" type="video/mp4" width="640" height="480" > </video>
+
+    <p>Implementación del elemento html5 svg </p>
+    <object data="enlaces-e-imagenes/images/image4.svg" type="image/svg+xml"  height="200"
+    width="280">
+        <!-- Imagen alternativa si el SVG no puede cargarse -->
+        <img src="enlaces-e-imagenes/images/image2.png" alt="Imagen PNG alternativa"  height="200"
+        width="280">
+      </object>
+
+
+    <p>Implementación del elemento html5 datalist </p>
+    <p>Escoge el color que más te guste </p>
+
+    <input list="listacolores">
+
+    <datalist id="listacolores">
+        <option value="Azul">
+        <option value="Rojo">
+        <option value="Amarillo">
+        <option value="Negro">
+        <option value="Blanco">
+    </datalist>  
+
+    <p>Implementación del elemento html5 datalist </p>
+
+    <details open="open">
+        <summary>Colores RGB</summary>
+        <p>Los colores RGB son el rojo, verde y azul.</p>
+    </details>
+    
+    <p>Enlaces relativos y absolutos: La diferencia entre estos dos enlaces, es que los relativos son acortados y no incluyen el orden del dominio, mientras que los absolutos si contienen el nombre del dominio</p>
+    <ul>
+        <li>Enlaces absolutos:incluyen todas las partes de la URL (protocolo, servidor y ruta) por lo que no se necesita más información para obtener el recurso enlazado </li>
+        <li>Enlaces relativos:prescinden de algunas partes de las URL para hacerlas más breves. Como se trata de URL incompletas, es necesario disponer de información adicional para obtener el recurso enlazado. En concreto, para que una URL relativa sea útil es imprescindible conocer la URL del origen del enlace.</li>
+    </ul>
+    <p>Para ir a la página de Google haz clic en el enlace</p>
+    <a href="https://www.google.com"> Google </a>
+
+    <p>Para ir a las Imágenes, haz clic en el enlace</p>
+    <a href=”images.html”>Imágenes</a>
+
+</body>
+</html>
